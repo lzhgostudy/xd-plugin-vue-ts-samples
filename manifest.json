@@ -39,6 +39,16 @@
         "type": "command",
         "id": "helloVue",
         "label": "Hello Vue2.7"
+      },
+      {
+        "type": "command",
+        "id": "createLinesCommand",
+        "label": "Draw Lines"
+      },
+      {
+        "type": "command",
+        "id": "exportRendition",
+        "label": "Export A Rendition"
       }
     ],
     "version": "0.0.1"

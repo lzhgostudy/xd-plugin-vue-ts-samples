@@ -12,6 +12,8 @@ module.exports = {
   externals: {
     uxp: "uxp",
     scenegraph: "scenegraph",
+    commands: "commands",
+    application: "application",
   },
   module: {
     rules: [

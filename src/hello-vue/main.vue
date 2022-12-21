@@ -13,7 +13,12 @@
     </footer>
   </form>
 </template>
-
+<script>
+  export default {
+    name: "HelloVue",
+    inheritAttrs: false,
+  }
+</script>
 <script setup>
 const { ref } = require("vue");
 
