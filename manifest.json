@@ -49,6 +49,11 @@
         "type": "command",
         "id": "exportRendition",
         "label": "Export A Rendition"
+      },
+      {
+        "type": "panel",
+        "id": "imagePlaceholder",
+        "label": "Image Placeholder"
       }
     ],
     "version": "0.0.1"
