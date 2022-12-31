@@ -54,6 +54,11 @@
         "type": "panel",
         "id": "imagePlaceholder",
         "label": "Image Placeholder"
+      },
+      {
+        "type": "panel",
+        "id": "spectrumCss",
+        "label": "Spectrum CSS"
       }
     ],
     "version": "0.0.1"
