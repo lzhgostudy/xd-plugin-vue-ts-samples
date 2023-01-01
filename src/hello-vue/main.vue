@@ -39,3 +39,10 @@ function close() {
   props.dialog.close()
 }
 </script>
+<style lang="scss" scoped>
+form {
+  h1 {
+    color: green;
+  }
+}
+</style>

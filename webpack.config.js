@@ -1,5 +1,6 @@
 const { VueLoaderPlugin } = require("vue-loader");
 const Webpack = require("webpack");
+const path = require("path");
 
 module.exports = {
   entry: "./src/index.ts",
@@ -27,8 +28,27 @@ module.exports = {
         loader: "vue-loader",
       },
       {
-        test: /\.css$/,
-        use: ["style-loader", "css-loader"],
+        test: /\.s?css$/,
+        use: ["vue-style-loader", "css-loader", "sass-loader"],
+      },
+      {
+        test: /\.pug$/,
+        oneOf: [
+          // this applies to <template lang="pug"> in Vue components
+          {
+            resourceQuery: /^\?vue/,
+            use: {
+              loader: "pug-plain-loader",
+              options: {
+                basedir: path.resolve(__dirname, "./pug"),
+              },
+            },
+          },
+          // this applies to pug imports inside JavaScript
+          {
+            use: ["raw-loader", "pug-plain-loader"],
+          },
+        ],
       },
     ],
   },

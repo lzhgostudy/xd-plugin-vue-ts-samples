@@ -42,6 +42,11 @@
       },
       {
         "type": "command",
+        "id": "helloPug",
+        "label": "Hello Pug"
+      },
+      {
+        "type": "command",
         "id": "createLinesCommand",
         "label": "Draw Lines"
       },
